@@ -4,12 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/0c8a1efbce.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/home.css">
     <title>Emily Slazyk</title>
 </head>
 <body>
-    hello world
+    <header class="header">
+        Emily Slazyk
+    </header>
+    <main class="main-content">
+        <section class="intro">
+            <h1 class="intro__title">Emily Slazyk</h1>
+            <h2 class="intro__role">Front End Developer</h2>
+            <h5 class="intro__location">Based in Nashville, TN</h5>
+        </section>
+
+        <section class="about">
+            <div class="about__me">
+                <h3>About Me</h3>
+                <p class="about__description">
+                    My name is Emily Slazyk, a recent graduate from SheCodes workshop with focus in Front End Development. I am skilled in
+                    utilizing modern front end technologies including HTML, CSS, Javascript, and React framework. I enjoy taking on the
+                    challenge of learning new things and cracking problems that are difficult to solve. I previously held a career in
+                    healthcare for 7 years prior to making the transition into the tech world. I currently reside in Nashville, TN and am
+                    open to both local and remote opportunities. Feel free to take a look at my work through GitHub or my projects page!
+                </p>
+                <h5>What I'm Doing Now</h5>
+                <p class="about__doingNow">
+                    
+                </p>
+                <img src="/images/resume-img.jpg" alt="Emily" width="200">
+            </div>
+            <div class="technology">
+                <h3>Technology and Skills</h3>
+                <div class="tech">
+                    <div class="tech__use">
+                        <h4>Skills I Use</h4>
+                        <p id="tech"><i class="fab fa-html5"></i></p>
+                        <p id="tech"><i class="fab fa-css3-alt"></i></p>
+                        <p id="tech"><i class="fab fa-js-square"></i></p>
+                        <p id="tech"><i class="fab fa-react"></i></p>
+                        <p id="tech"><i class="fab fa-git"></i></p>
+                        <p id="tech"><i class="fab fa-bootstrap"></i></p>
+                    </div>
+                    <div class="tech__learning">
+                        <h4>Skills I'm Familiar with and Learning</h4>
+                        <p id="tech"><i class="fab fa-python"></i></p>
+                        <p id="tech"><i class="fab fa-node"></i></p>
+                        <p id="tech"><i class="fab fa-npm"></i></p>
+                        <p id="tech"><i class="fas fa-universal-access"></i></p>
+                        <p id="tech"><i class="fab fa-linux"></i></p>
+                        <p id="tech"><i class="fas fa-database"></i></p>
+                        <p id="tech"><i class="fab fa-aws"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h4 class="contact__title">Contact Me</h4>
+            <form action="mailto:eslazy32@gmail.com" class="contact__emailForm">
+                <input type="text" placeholder="Name.." name="name" class="contact__name">
+                <input type="email" placeholder="Email Address.." name="email" class="contact__email">
+                <input type="text" placeholder="Message.." name="message" class="contact__message">
+                <input type="submit" value="Contact Me" name="contact-button" class="contact__button">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__media"></p>
+        <p class="footer__media"></p>
+        <p class="footer__media"></p>
+        <p class="footer__createdBy">Site created by Emily Slazyk</p>
+        <p class="footer_code">
+            <a href="https://github.com/eslazyk10/portfolio-3-vanillajs">Open Sourced Code Available Here</a>
+        </p>
+    </footer>
 
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
 </html>
