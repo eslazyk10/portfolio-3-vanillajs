@@ -16,18 +16,49 @@
 </head>
 <body>
     <header class="header">
-        Emily Slazyk
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #314a52; border-radius: 5px; padding: 10px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/images/personal-logo.png" alt="Logo" width="50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" 
+                            aria-current="page" 
+                            href="/index.html" 
+                            style="text-align: center; color: whitesmoke; font-size: 18px; font-family: 'Poppins', sans-serif;">
+                            Home
+                        </a>
+                        <a class="nav-link" 
+                            href="/projects.html" 
+                            style="text-align: center; color: whitesmoke; font-size: 18px; font-family: 'Poppins', sans-serif;">
+                            Projects
+                        </a>
+                        <a class="nav-link" 
+                            href="/index.html#contact" 
+                            style="text-align: center; color: whitesmoke; font-size: 18px; font-family: 'Poppins', sans-serif;">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main class="main-content">
         <section class="intro">
-            <h1 class="intro__title">Emily Slazyk</h1>
-            <h2 class="intro__role">Front End Developer</h2>
+            <h1 class="intro__title">👋🏼 I'm Emily Slazyk</h1>
+            <h2 class="intro__role"><i class="fas fa-chevron-left"></i>Front End Developer/<i class="fas fa-chevron-right"></i></h2>
             <h5 class="intro__location">Based in Nashville, TN</h5>
         </section>
-
+        
+        <div class="container">
         <section class="about">
             <div class="about__me">
                 <h3>About Me</h3>
+                <div class="about__head">
+                <img src="/images/resume-img.jpg" alt="Emily">
                 <p class="about__description">
                     My name is Emily Slazyk, a recent graduate from SheCodes workshop with focus in Front End Development. I am skilled in
                     utilizing modern front end technologies including HTML, CSS, Javascript, and React framework. I enjoy taking on the
@@ -35,39 +66,39 @@
                     healthcare for 7 years prior to making the transition into the tech world. I currently reside in Nashville, TN and am
                     open to both local and remote opportunities. Feel free to take a look at my work through GitHub or my projects page!
                 </p>
+                </div>
                 <h5>What I'm Doing Now</h5>
                 <p class="about__doingNow">
 
                 </p>
-                <img src="/images/resume-img.jpg" alt="Emily" width="200">
             </div>
-            <div class="technology">
-                <h3>Technology and Skills</h3>
+            <section class="technology">
                 <div class="tech">
+                    <h4>Skills I Use</h4>
                     <div class="tech__use">
-                        <h4>Skills I Use</h4>
                         <p id="tech"><i class="fab fa-html5"></i></p>
                         <p id="tech"><i class="fab fa-css3-alt"></i></p>
                         <p id="tech"><i class="fab fa-js-square"></i></p>
                         <p id="tech"><i class="fab fa-react"></i></p>
                         <p id="tech"><i class="fab fa-git"></i></p>
                         <p id="tech"><i class="fab fa-bootstrap"></i></p>
+                        <p id="tech"><i class="fab fa-npm"></i></p>
                     </div>
-                    <div class="tech__learning">
-                        <h4>Skills I'm Familiar with and Learning</h4>
+                    <h4>Skills I'm Familiar with and Learning</h4>
+                    <div class="tech__use">
                         <p id="tech"><i class="fab fa-python"></i></p>
                         <p id="tech"><i class="fab fa-node"></i></p>
-                        <p id="tech"><i class="fab fa-npm"></i></p>
                         <p id="tech"><i class="fas fa-universal-access"></i></p>
                         <p id="tech"><i class="fab fa-linux"></i></p>
                         <p id="tech"><i class="fas fa-database"></i></p>
                         <p id="tech"><i class="fab fa-aws"></i></p>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
+        </div>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h4 class="contact__title">Contact Me</h4>
             <form action="mailto:eslazy32@gmail.com" class="contact__emailForm">
                 <input type="text" placeholder="Name.." name="name" class="contact__name">
@@ -80,10 +111,12 @@
     </main>
     <footer class="footer">
         <p class="footer__createdBy">Site created by Emily Slazyk</p>
-        <a href="https://www.linkedin.com/in/emily-slazyk-9b4b16185/" class="footer__media" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/eslazyk10" class="footer__media"><i class="fab fa-github-square" title="Github"></i></a>
-        <p class="footer_code">
-            <a href="https://github.com/eslazyk10/portfolio-3-vanillajs" title="Code">Open Sourced Code Available Here</a>
+        <div class="footer__links">
+        <a href="https://www.linkedin.com/in/emily-slazyk-9b4b16185/" target="_blank" class="footer__media" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/eslazyk10" target="_blank" class="footer__media"><i class="fab fa-github-square" title="Github"></i></a>
+        </div>
+        <p class="footer__code">
+            <a href="https://github.com/eslazyk10/portfolio-3-vanillajs" target="_blank" title="Code">Open Sourced Code Available Here</a>
         </p>
     </footer>
 

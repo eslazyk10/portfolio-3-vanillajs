@@ -3,3 +3,216 @@ font-family: 'Caveat', cursive;
 font-family: 'Poiret One', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
+
+.main-content {
+  min-height: 100vh;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+/*INTRO SECTION*/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  font-family: "Poppins", sans-serif;
+  color: #314a52;
+}
+
+.intro__title {
+  font-size: 64px;
+  padding: 20px;
+}
+
+.intro__location {
+  padding: 15px;
+}
+
+/*MAIN BOY AND ABOUT SECTION*/
+
+.container {
+  background-image: linear-gradient(
+    -15deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.08)
+  );
+  margin-top: 50px;
+  box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #314a52;
+}
+
+.about__me {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about__me h3 {
+  font-family: "Poiret One", cursive;
+  font-size: 55px;
+  font-weight: 600;
+  padding: 30px;
+  border-bottom: whitesmoke;
+}
+
+.about img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 35%;
+  height: 250px;
+  width: 250px;
+}
+
+.about__description {
+  font-family: "Poppins", sans-serif;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.about h5 {
+  font-family: "Poiret One", cursive;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/*TECH SECTION*/
+
+.technology {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tech h4 {
+  font-family: "Poiret One", cursive;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.tech__use {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
+#tech {
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  background-image: linear-gradient(
+    -15deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.08)
+  );
+  box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+}
+
+.contact__title {
+  font-size: 52px;
+  font-family: "Poiret One", cursive;
+  transform: rotate(-12deg);
+  letter-spacing: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+input .contact__message {
+  height: 30px;
+  overflow: scroll;
+}
+
+.contact__button {
+  width: 15%;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #314a52;
+  color: #fae3e3;
+  border: none;
+}
+
+/*FOOTER SECTION*/
+.footer {
+  background: #314a52;
+  border-top: 1px solid whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.footer__createdBy {
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 40px;
+}
+
+.footer__media {
+  padding: 5px 30px;
+  color: #ffded5;
+}
+
+.footer__media:hover {
+  color: #fae3e3;
+  font-size: 42px;
+}
+
+.footer__code a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer__code a:hover {
+  text-decoration: underline;
+}
