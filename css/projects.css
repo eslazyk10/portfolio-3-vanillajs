@@ -54,11 +54,28 @@ font-family: 'Ubuntu', sans-serif; */
   backdrop-filter: blur(10px);
   margin: 20px;
   position: relative;
+  transition: transform 500ms ease;
+}
+
+.projects__card:hover {
+  transform: scale(1.05);
+}
+
+.projects__card:hover .projects__img {
+  transform: scaleX(1);
+}
+
+.projects__card:hover .projects__description {
+  transform: scaleY(1);
+}
+
+.projects__card:hover .projects__button {
+  transform: scaleY(1);
 }
 
 .projects__name {
   position: absolute;
-  top: 35px;
+  top: 30px;
   left: 0px;
   font-size: 40px;
   font-weight: 600;
@@ -71,6 +88,22 @@ font-family: 'Ubuntu', sans-serif; */
   width: 150px;
   height: 120px;
   border-radius: 5px;
+  position: absolute;
+  top: 128px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.projects__description {
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 255px;
+  text-align: center;
+  padding: 0px 8px;
+  transform: scaleY(0);
+  transition: transform 500ms ease;
 }
 
 .projects__button {
@@ -80,6 +113,11 @@ font-family: 'Ubuntu', sans-serif; */
   color: #fae3e3;
   border: none;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 23px;
+  right: 130px;
+  transform: scaleY(0);
+  transition: transform 500ms ease;
 }
 
 /*FOOTER SECTION*/
