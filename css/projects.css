@@ -6,7 +6,11 @@ font-family: 'Ubuntu', sans-serif; */
 
 .main-content {
   min-height: 100vh;
-  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  background: linear-gradient(
+    97deg,
+    rgb(255, 252, 214) 0%,
+    rgb(255, 204, 202) 85%
+  );
 }
 
 .container {

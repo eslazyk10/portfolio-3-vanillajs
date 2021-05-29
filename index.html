@@ -51,7 +51,7 @@
     </header>
     <main class="main-content">
         <section class="intro">
-            <h1 class="intro__title">👋🏼 I'm Emily Slazyk</h1>
+            <h1 class="intro__title">👋🏼I'm Emily Slazyk</h1>
             <h2 class="intro__role"><i class="fas fa-chevron-left"></i>Front End Developer/<i class="fas fa-chevron-right"></i></h2>
             <h5 class="intro__location">Based in Nashville, TN</h5>
         </section>
@@ -82,23 +82,28 @@
             <section class="technology">
                 <div class="tech">
                     <h4>Skills and Tools I Use</h4>
-                    <div class="tech__use">
-                        <p id="tech"><i class="fab fa-html5"></i></p>
-                        <p id="tech"><i class="fab fa-css3-alt"></i></p>
-                        <p id="tech"><i class="fab fa-js-square"></i></p>
-                        <p id="tech"><i class="fab fa-react"></i></p>
-                        <p id="tech"><i class="fab fa-git"></i></p>
-                        <p id="tech"><i class="fab fa-bootstrap"></i></p>
-                        <p id="tech"><i class="fab fa-npm"></i></p>
+                        <div class="tech__use">
+                            <div class="row">
+                            <div class="col" id="tech"><i class="fab fa-html5"></i></div>
+                            <div class="col" id="tech"><i class="fab fa-css3-alt"></i></div>
+                            <div class="col" id="tech"><i class="fab fa-css3-alt"></i></div>
+                            <div class="col" id="tech"><i class="fab fa-js-square"></i></div>
+                            <div class="col" id="tech"><i class="fab fa-react"></i></div>
+                            <div class="col" id="tech"><i class="fab fa-git"></i></div>
+                            <div class="col" id="tech"><i class="fab fa-bootstrap"></i></div>
+                            <div class="col" id="tech"><i class="fab fa-npm"></i></div>
+                        </div>
                     </div>
                     <h4>Skills and Tools that I'm Familiar with and Learning</h4>
                     <div class="tech__use">
-                        <p id="tech"><i class="fab fa-python"></i></p>
-                        <p id="tech"><i class="fab fa-node"></i></p>
-                        <p id="tech"><i class="fas fa-universal-access"></i></p>
-                        <p id="tech"><i class="fab fa-linux"></i></p>
-                        <p id="tech"><i class="fas fa-database"></i></p>
-                        <p id="tech"><i class="fab fa-aws"></i></p>
+                        <div class="row">
+                        <div class="col" id="tech"><i class="fab fa-python"></i></div>
+                        <div class="col" id="tech"><i class="fab fa-node"></i></div>
+                        <div class="col" id="tech"><i class="fas fa-universal-access"></i></div>
+                        <div class="col" id="tech"><i class="fab fa-linux"></i></div>
+                        <div class="col" id="tech"><i class="fas fa-database"></i></div>
+                        <div class="col" id="tech"><i class="fab fa-aws"></i></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -106,21 +111,27 @@
         </div>
 
         <section class="contact" id="contact">
-            <h4 class="contact__title">Contact Me</h4>
-            <form action="mailto:eslazy32@gmail.com" class="contact__emailForm">
-                <input type="text" placeholder="Name.." name="name" class="contact__name">
-                <input type="email" placeholder="Email Address.." name="email" class="contact__email">
-                <input type="text" placeholder="Subject" name="subject" class="contact__subject">
-                <input type="text" placeholder="Message.." name="message" class="contact__message">
-                <input type="submit" value="Contact Me" name="contact-button" class="contact__button">
-            </form>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="contact__title">Contact Me</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact__info">
+                        <h5>Contact Details:</h5>
+                        <p class="contact__email">Email: eslazy32@gmail.com</p>
+                        <p class="contact__phone">+1-708-821-5643</p>
+                        <a class="contact__messageLink" href="mailto:eslazy32@gmail.com" title="Email Emily"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:708-821-5643" class="contact__call" title="Call Emily"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <p class="footer__createdBy">Site created by Emily Slazyk</p>
         <div class="footer__links">
         <a href="https://www.linkedin.com/in/emily-slazyk-9b4b16185/" target="_blank" class="footer__media" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/eslazyk10" target="_blank" class="footer__media"><i class="fab fa-github-square" title="Github"></i></a>
+        <a href="https://github.com/eslazyk10" target="_blank" class="footer__media"><i class="fab fa-github-square" title="GitHub"></i></a>
         </div>
         <p class="footer__code">
             <a href="https://github.com/eslazyk10/portfolio-3-vanillajs" target="_blank" title="Code">Open Sourced Code Available Here</a>

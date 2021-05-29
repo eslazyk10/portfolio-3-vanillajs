@@ -3,58 +3,137 @@ font-family: 'Caveat', cursive;
 font-family: 'Poiret One', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
+/*Save for dark mode
+ background: linear-gradient(
+    112.6deg,
+    rgb(56, 24, 40) -10.7%,
+    rgb(23, 148, 185) 100.2%
+  );
+    background: linear-gradient(
+    109.6deg,
+    rgb(48, 207, 208) 11.2%,
+    rgb(51, 8, 103) 92.5%
+  );
+  */
 
 .main-content {
   min-height: 100vh;
-  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  /*background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);*/
+  /*background: linear-gradient(
+    109.6deg,
+    rgb(177, 173, 219) 11.2%,
+    rgb(245, 226, 226) 91.1%
+  );*/
+  background: linear-gradient(
+    97deg,
+    rgb(255, 252, 214) 0%,
+    rgb(255, 204, 202) 85%
+  );
 }
 
 /*INTRO SECTION*/
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 95vh;
-  font-family: "Poppins", sans-serif;
-  color: #314a52;
+@media (min-width: 690px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    font-family: "Poppins", sans-serif;
+    color: #314a52;
+    text-align: center;
+  }
+
+  .intro__title {
+    font-size: 64px;
+    padding: 20px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 2px;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fae3e3;
+    }
+  }
+
+  .intro__location {
+    padding: 15px;
+  }
 }
 
-.intro__title {
-  font-size: 64px;
-  padding: 20px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 2px;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
+@media (max-width: 690px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    font-family: "Poppins", sans-serif;
+    color: #314a52;
+    text-align: center;
+  }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
+  .intro__title {
+    font-size: 32px;
+    padding-bottom: 20px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.5px;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
-  to {
-    width: 42%;
-  }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
-  50% {
-    border-color: #fae3e3;
-  }
-}
 
-.intro__location {
-  padding: 15px;
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fae3e3;
+    }
+  }
+
+  .intro__role {
+    font-size: 19px;
+  }
+
+  .intro__location {
+    padding: 15px;
+    font-size: 14px;
+  }
 }
 
 /*MAIN BODY AND ABOUT SECTION*/
@@ -122,101 +201,183 @@ font-family: 'Ubuntu', sans-serif; */
   padding-top: 10px;
 }
 
-.about__description,
-.about__doingNow {
-  font-family: "Poppins", sans-serif;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  letter-spacing: 0.75px;
-  text-align: center;
+@media (min-width: 370px) {
+  .about__description,
+  .about__doingNow {
+    font-family: "Poppins", sans-serif;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  /*TECH SECTION*/
+
+  .technology {
+    text-align: center;
+    padding: 40px;
+  }
+
+  .tech h4 {
+    font-family: "Poiret One", cursive;
+    font-weight: 500;
+    font-size: 38px;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+    margin: 33px 0px 8px 0px;
+    padding-bottom: 8px;
+  }
+
+  .tech__use {
+    font-size: 40px;
+    border-bottom: 1px solid white;
+  }
 }
 
-/*TECH SECTION*/
+@media (max-width: 370px) {
+  .about__description,
+  .about__doingNow {
+    font-family: "Poppins", sans-serif;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+  }
 
-.technology {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 15px;
-}
+  /*TECH SECTION*/
 
-.tech h4 {
-  font-family: "Poiret One", cursive;
-  font-weight: 500;
-  font-size: 35px;
-  text-transform: capitalize;
-  border-bottom: 1px solid white;
-  padding-bottom: 5px;
-}
+  .technology {
+    text-align: center;
+    margin-top: 15px;
+    padding: 40px;
+  }
 
-.tech__use {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 30px;
-  padding-bottom: 30px;
+  .tech h4 {
+    font-family: "Poiret One", cursive;
+    font-weight: 500;
+    font-size: 26px;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+    margin: 33px 0px 8px 0px;
+    padding-bottom: 8px;
+  }
+
+  .tech__use {
+    font-size: 30px;
+    border-bottom: 1px solid white;
+  }
 }
 
 #tech {
-  padding: 15px 30px;
+  padding: 15px 25px;
 }
 
 /*CONTACT SECTION*/
 
-.contact {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 25px;
-  background-image: linear-gradient(
-    -15deg,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.08)
-  );
-  box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  backdrop-filter: blur(10px);
-  padding: 30px;
+@media (min-width: 768px) {
+  .contact {
+    margin-top: 33px;
+    background-image: linear-gradient(
+      -15deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.08)
+    );
+    box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    text-align: center;
+  }
+
+  .contact__title {
+    font-size: 52px;
+    font-family: "Poiret One", cursive;
+    font-weight: 600;
+    transform: rotate(-10deg);
+    letter-spacing: 2px;
+    margin: 33px 0px;
+  }
+
+  .contact__info {
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    margin: 33px 0px;
+  }
+
+  .contact__info h5 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+
+  .contact__email,
+  .contact__phone {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .contact__info a {
+    color: #314a52;
+    font-size: 33px;
+    padding-right: 33px;
+  }
 }
 
-.contact__title {
-  font-size: 52px;
-  font-family: "Poiret One", cursive;
-  transform: rotate(-12deg);
-  letter-spacing: 2px;
-}
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 25px;
+    background-image: linear-gradient(
+      -15deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.08)
+    );
+    box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    text-align: center;
+  }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  padding: 15px;
-  border-radius: 10px;
-}
+  .contact__title {
+    font-size: 52px;
+    font-family: "Poiret One", cursive;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
 
-input {
-  margin: 5px;
-}
+  .contact__info {
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    padding-left: 15px;
+  }
 
-input .contact__message {
-  height: 30px;
-  overflow: scroll;
-}
+  .contact__info h5 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
 
-.contact__button {
-  width: 15%;
-  padding: 5px;
-  border-radius: 8px;
-  background-color: #314a52;
-  color: #fae3e3;
-  border: none;
+  .contact__email,
+  .contact__phone {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .contact__info a {
+    color: #314a52;
+    font-size: 33px;
+    padding-right: 33px;
+  }
 }
 
 /*FOOTER SECTION*/
@@ -260,4 +421,13 @@ input .contact__message {
 
 .footer__code a:hover {
   text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
