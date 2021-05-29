@@ -54,12 +54,7 @@ font-family: 'Ubuntu', sans-serif; */
   backdrop-filter: blur(10px);
   margin: 20px;
   position: relative;
-  transition: transform 500ms ease;
   overflow: hidden;
-}
-
-.projects__card:hover {
-  transform: scale(1.05);
 }
 
 .projects__name {
@@ -79,12 +74,6 @@ font-family: 'Ubuntu', sans-serif; */
   border-radius: 5px;
   position: absolute;
   top: 128px;
-  transform: translateX(-200%);
-  transition: transform 750ms ease-in;
-}
-
-.projects__card:hover .projects__img {
-  transform: translateX(0);
 }
 
 .card-content {
@@ -92,13 +81,6 @@ font-family: 'Ubuntu', sans-serif; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transform: translateY(200%);
-  transition: transform 750ms ease;
-}
-
-.projects__card:hover .card-content {
-  transform: translateY(70%);
-  transition-delay: 750ms;
 }
 
 .projects__description {
@@ -106,9 +88,14 @@ font-family: 'Ubuntu', sans-serif; */
   letter-spacing: 1px;
   text-align: center;
   padding: 0px 8px;
+  position: absolute;
+  top: 252px;
 }
 
 .projects__button {
+  position: absolute;
+  bottom: 25px;
+  right: 128px;
   padding: 8px;
   border-radius: 8px;
   background-color: #314a52;
@@ -158,4 +145,59 @@ font-family: 'Ubuntu', sans-serif; */
 
 .footer__code a:hover {
   text-decoration: underline;
+}
+
+@media (hover) {
+  .projects__card {
+    transition: transform 500ms ease;
+  }
+
+  .projects__card:hover,
+  .projects__card:focus-within {
+    transform: scale(1.05);
+  }
+
+  .projects__card:focus-within {
+    transition-duration: 0ms;
+  }
+
+  .projects__img {
+    transform: translateX(-200%);
+    transition: transform 750ms ease-in;
+  }
+
+  .projects__card:hover .projects__img,
+  .projects__card:focus-within .projects__img {
+    transform: translateX(0);
+  }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(50%);
+    transition: transform 750ms ease;
+  }
+
+  .projects__card:hover .card-content,
+  .projects__card:focus-within .card-content {
+    transform: translateY(-60%);
+    transition-delay: 750ms;
+  }
+
+  .projects__card:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  .projects__description {
+    position: relative;
+  }
+
+  .projects__button {
+    position: relative;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
 }
