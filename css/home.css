@@ -24,13 +24,40 @@ font-family: 'Ubuntu', sans-serif; */
 .intro__title {
   font-size: 64px;
   padding: 20px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 2px;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 42%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fae3e3;
+  }
 }
 
 .intro__location {
   padding: 15px;
 }
 
-/*MAIN BOY AND ABOUT SECTION*/
+/*MAIN BODY AND ABOUT SECTION*/
 
 .container {
   background-image: linear-gradient(
@@ -66,7 +93,19 @@ font-family: 'Ubuntu', sans-serif; */
   font-size: 55px;
   font-weight: 600;
   padding: 30px;
-  border-bottom: whitesmoke;
+  animation: jump 5s infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(8px) rotateZ(-5deg);
+  }
+  50% {
+    transform: translateY(8px) rotateZ(5deg);
+  }
+  100% {
+    transform: translateY(8px) rotateZ(-5deg);
+  }
 }
 
 .about img {
@@ -78,18 +117,18 @@ font-family: 'Ubuntu', sans-serif; */
   margin-bottom: 20px;
 }
 
+.about__head {
+  border-top: 1px solid whitesmoke;
+  padding-top: 10px;
+}
+
 .about__description,
 .about__doingNow {
   font-family: "Poppins", sans-serif;
   flex-wrap: wrap;
   max-width: 1000px;
-}
-
-.about h5 {
-  font-family: "Poiret One", cursive;
-  padding-bottom: 20px;
-  font-size: 40px;
-  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-align: center;
 }
 
 /*TECH SECTION*/
@@ -100,12 +139,16 @@ font-family: 'Ubuntu', sans-serif; */
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 15px;
 }
 
 .tech h4 {
   font-family: "Poiret One", cursive;
   font-weight: 500;
   font-size: 35px;
+  text-transform: capitalize;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
 }
 
 .tech__use {
@@ -114,10 +157,11 @@ font-family: 'Ubuntu', sans-serif; */
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
+  padding-bottom: 30px;
 }
 
 #tech {
-  padding: 30px;
+  padding: 15px 30px;
 }
 
 /*CONTACT SECTION*/
