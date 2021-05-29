@@ -16,7 +16,7 @@ font-family: 'Ubuntu', sans-serif; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
+  min-height: 95vh;
   font-family: "Poppins", sans-serif;
   color: #314a52;
 }
@@ -38,7 +38,6 @@ font-family: 'Ubuntu', sans-serif; */
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0.08)
   );
-  margin-top: 50px;
   box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -76,12 +75,13 @@ font-family: 'Ubuntu', sans-serif; */
   border-radius: 35%;
   height: 250px;
   width: 250px;
+  margin-bottom: 20px;
 }
 
-.about__description {
+.about__description,
+.about__doingNow {
   font-family: "Poppins", sans-serif;
   flex-wrap: wrap;
-  padding: 20px;
   max-width: 1000px;
 }
 
@@ -114,12 +114,13 @@ font-family: 'Ubuntu', sans-serif; */
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
-  padding: 20px;
 }
 
 #tech {
-  padding: 20px;
+  padding: 30px;
 }
+
+/*CONTACT SECTION*/
 
 .contact {
   display: flex;
