@@ -206,6 +206,7 @@ body.dark {
     border-radius: 20px;
     backdrop-filter: blur(25px);
     position: relative;
+    overflow: hidden;
   }
 
   .dark .projects__card {
@@ -217,6 +218,7 @@ body.dark {
     box-shadow: 8px 6px 20px rgba(106, 107, 108, 0.5);
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     border-left: 1px solid rgba(0, 0, 0, 0.5);
+    overflow: hidden;
   }
 
   .projects__name {
