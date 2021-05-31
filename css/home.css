@@ -360,6 +360,19 @@ body.dark {
     text-align: center;
   }
 
+  .dark .contact {
+    background-image: linear-gradient(
+      -15deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.4)
+    );
+    box-shadow: 8px 6px 20px rgba(106, 107, 108, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    backdrop-filter: blut(25px);
+  }
+
   .contact__title {
     font-size: 52px;
     font-family: "Poiret One", cursive;
@@ -392,6 +405,10 @@ body.dark {
     font-size: 33px;
     padding-right: 33px;
   }
+
+  .dark .contact__info a {
+    color: whitesmoke;
+  }
 }
 
 @media (max-width: 768px) {
@@ -410,6 +427,19 @@ body.dark {
     backdrop-filter: blur(25px);
     padding: 30px;
     text-align: center;
+  }
+
+  .dark .contact {
+    background-image: linear-gradient(
+      -15deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.4)
+    );
+    box-shadow: 8px 6px 20px rgba(106, 107, 108, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    backdrop-filter: blut(25px);
   }
 
   .contact__title {
@@ -442,6 +472,10 @@ body.dark {
     color: #314a52;
     font-size: 33px;
     padding-right: 33px;
+  }
+
+  .dark .contact__info a {
+    color: whitesmoke;
   }
 }
 
