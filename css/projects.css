@@ -98,7 +98,7 @@ body.dark {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 20px 0px;
     width: 350px;
     height: 450px;
     background-image: linear-gradient(
@@ -124,6 +124,26 @@ body.dark {
     box-shadow: 8px 6px 20px rgba(106, 107, 108, 0.5);
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     border-left: 1px solid rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .projects__card {
+    transition: transform 500ms ease;
+  }
+
+  .projects__card:hover,
+  .projects__card:focus-within {
+    transform: scale(1.05);
+  }
+
+  .dark .projects__card {
+    transition: transform 500ms ease;
+  }
+
+  .dark .projects__card:hover,
+  .dark .projects__card:focus-within {
+    transform: scale(1.05);
   }
 
   .projects__name {
@@ -142,11 +162,13 @@ body.dark {
   }
 
   .projects__img {
-    width: 150px;
-    height: 120px;
-    border-radius: 5px;
-    position: absolute;
-    top: 138px;
+    transform: translateX(-200%);
+    transition: transform 750ms ease-in;
+  }
+
+  .projects__card:hover .projects__img,
+  .projects__card:focus-within .projects__img {
+    transform: translateX(0);
   }
 
   .card-content {
@@ -156,25 +178,35 @@ body.dark {
     flex-direction: column;
   }
 
+  .projects__img {
+    width: 150px;
+    height: 120px;
+    border-radius: 5px;
+    position: absolute;
+    top: 138px;
+  }
+
   .projects__description {
     font-size: 12px;
     letter-spacing: 1px;
     text-align: center;
     padding: 0px 8px;
     position: absolute;
-    top: 260px;
+    width: 345px;
+    bottom: 45px;
   }
 
   .projects__button {
     position: absolute;
-    bottom: 23px;
-    right: 128px;
-    padding: 8px;
-    border-radius: 8px;
+    padding: 7px;
+    border-radius: 5px;
     background-color: #314a52;
     color: #fae3e3;
     border: none;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    bottom: 15px;
+    right: 127px;
   }
 
   .dark .projects__button {
@@ -221,6 +253,19 @@ body.dark {
     overflow: hidden;
   }
 
+  .projects__card {
+    transition: transform 500ms ease;
+  }
+
+  .projects__card:hover,
+  .projects__card:focus-within {
+    transform: scale(1.05);
+  }
+
+  .projects__card:focus-within {
+    transition-duration: 0ms;
+  }
+
   .projects__name {
     position: absolute;
     top: 30px;
@@ -237,11 +282,13 @@ body.dark {
   }
 
   .projects__img {
-    width: 150px;
-    height: 120px;
-    border-radius: 5px;
-    position: absolute;
-    top: 113px;
+    transform: translateX(-200%);
+    transition: transform 750ms ease-in;
+  }
+
+  .projects__card:hover .projects__img,
+  .projects__card:focus-within .projects__img {
+    transform: translateX(0);
   }
 
   .card-content {
@@ -251,25 +298,36 @@ body.dark {
     flex-direction: column;
   }
 
+  .projects__img {
+    width: 150px;
+    height: 120px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100px;
+  }
+
   .projects__description {
     font-size: 12px;
     letter-spacing: 1px;
     text-align: center;
     padding: 0px 8px;
     position: absolute;
-    top: 240px;
+    width: 240px;
+    bottom: 32px;
   }
 
   .projects__button {
     position: absolute;
-    bottom: -15px;
-    right: 78px;
-    padding: 8px;
-    border-radius: 8px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
     background-color: #314a52;
     color: #fae3e3;
     border: none;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    bottom: 15px;
+    right: 80px;
   }
 
   .dark .projects__button {
@@ -336,58 +394,6 @@ body.dark {
 
 .footer__code a:hover {
   text-decoration: underline;
-}
-
-@media (hover) {
-  .projects__card {
-    transition: transform 500ms ease;
-  }
-
-  .projects__card:hover,
-  .projects__card:focus-within {
-    transform: scale(1.05);
-  }
-
-  .projects__card:focus-within {
-    transition-duration: 0ms;
-  }
-
-  .projects__img {
-    transform: translateX(-200%);
-    transition: transform 750ms ease-in;
-  }
-
-  .projects__card:hover .projects__img,
-  .projects__card:focus-within .projects__img {
-    transform: translateX(0);
-  }
-
-  .card-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transform: translateY(50%);
-    transition: transform 750ms ease;
-  }
-
-  .projects__card:hover .card-content,
-  .projects__card:focus-within .card-content {
-    transform: translateY(-60%);
-    transition-delay: 750ms;
-  }
-
-  .projects__card:focus-within .card-content {
-    transition-duration: 0ms;
-  }
-
-  .projects__description {
-    position: relative;
-  }
-
-  .projects__button {
-    position: relative;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
