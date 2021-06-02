@@ -350,7 +350,6 @@ body.dark {
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.08)
     );
-    box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-top-left-radius: 20px;
@@ -435,11 +434,11 @@ body.dark {
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.4)
     );
-    box-shadow: 8px 6px 20px rgba(106, 107, 108, 0.5);
+
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     border-left: 1px solid rgba(0, 0, 0, 0.5);
     color: whitesmoke;
-    backdrop-filter: blut(25px);
+    backdrop-filter: blur(25px);
   }
 
   .contact__title {
@@ -492,6 +491,7 @@ body.dark {
 
 .dark .footer {
   background-color: #1e394b;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .footer__createdBy {
